@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BadgeMaui.Control.Badge">
+    <Grid
+        x:Name="MainLayout"
+          RowDefinitions="*" 
+          ColumnDefinitions="*" 
+          RowSpacing="0" 
+          ColumnSpacing="0" 
+          Padding="8" 
+          BackgroundColor="Transparent"
+        >
+        <ContentView x:Name="ViewContent"/>
+        <Border 
+            x:Name="BadgeView"
+            Stroke="Black"
+            StrokeThickness="2"
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            HeightRequest="25"
+            WidthRequest="25" 
+            BackgroundColor="Red"
+            StrokeShape="RoundRectangle 10">
+            <Label
+                x:Name="BadgeLabel"
+                Text="" 
+                TextColor="White"
+                FontSize="10" 
+                LineBreakMode="NoWrap"
+                VerticalTextAlignment="Center" 
+                HorizontalTextAlignment="Center"/>
+        </Border>
+        <!--<ContentView x:Name="BadgeView" HorizontalOptions="Start" VerticalOptions="Start"/>-->
+    </Grid>
+</ContentView>
