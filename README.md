@@ -1,4 +1,3 @@
-![](<img width="107" height="77" alt="image" src="https://github.com/user-attachments/assets/d9fcf72b-5fe5-48fd-8bf5-fba0c1c9a9d8" />)
 # Badge MAUI
 
 `BadgeMaui` provides the ability to attach a badge to any control in your .NET MAUI application.
@@ -26,6 +25,7 @@ Install with the dotnet CLI: `dotnet add package BadgeMaui`, or through the NuGe
 First, you must define the the `Badge.MainContent` in order to set the control on which the badge will be attached to.
 Secondly, you can customize the badge via a range of properties described below or you can attach the badge with its default values.
 In order to setup your badge content, set the `Badge.BadgeText` property.
+You can also change the alginment of the badge via the `Badge.Align` property.
 
 ###Example XAML
 <local:Badge HeightRequest="80" 
